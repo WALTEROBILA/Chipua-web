@@ -1,0 +1,86 @@
+main{
+	padding-bottom: 70px;
+	padding-left: 100px;
+	padding-right: 100px;
+}
+
+.contact-container{
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+}
+
+.auto-contact-section {
+	margin-top: 200px;
+	max-width: 600px;
+	padding: 2rem;
+	background-color: #f8f9fa;
+	border-radius: 12px;
+	box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+	font-family: 'Segoe UI', sans-serif;
+}     
+
+.auto-contact-section h2 {
+	text-align: center;
+	margin-bottom: 1rem;
+	color: rgba(0, 128, 0, 0.8);
+}
+
+.auto-contact-section label {
+	display: block;
+	margin-top: 1rem;
+	font-weight: 600;
+}
+
+.auto-contact-section input,
+.auto-contact-section textarea {
+	width: 100%;
+	padding: 0.75rem;
+	margin-top: 0.25rem;
+	border: 1px solid #ccc;
+	border-radius: 8px;
+	font-size: 1rem;
+}
+
+.auto-contact-section button {
+	margin-top: 1.5rem;
+	width: 100%;
+	padding: 0.75rem;
+	background-color: rgba(0, 128, 0, 0.8);
+	color: #fff;
+	border: none;
+	border-radius: 8px;
+	font-size: 1.1rem;
+	cursor: pointer;
+	transition: background-color 0.3s ease;
+}
+
+.auto-contact-section button:hover {
+	background-color: rgba(0, 128, 0, 0.8);
+}
+
+.contacts-info-section{
+	margin-top: 200px;
+	max-width: 350px;
+	padding: 2rem;
+	background-color: #f8f9fa;
+	border-radius: 12px;
+	box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+	font-family: 'Segoe UI', sans-serif;
+}
+
+.subt{
+	font-weight: 700;
+	font-size: 32px;
+	margin-bottom: 20px;
+}
+
+.tagline{
+	font-size: 17px;
+	margin-bottom: 15px;
+}
+
+.email{
+	font-size: 17px;
+	margin-bottom: 10px;
+}

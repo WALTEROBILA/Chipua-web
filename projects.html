@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+
+<html>
+	<head>
+		<title>Our Projects</title>
+
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;500;700&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+
+		<link rel="stylesheet" href="styles/general.css">
+		<link rel="stylesheet" href="styles/header.css">
+		<link rel="stylesheet" href="styles/main.css">
+		<link rel="stylesheet" href="styles/footer.css">
+		<link rel="stylesheet" href="styles/projects.css">
+
+	</head>
+
+	<body>
+		<header>
+			<div class="top_header_sect">
+				<nav>
+					<div class="top_left_header">
+						<a href="index.html">
+							<div class="logo_container">
+								<img class="logo" src="images/tentative_logo.png">
+							</div> 
+						</a>
+					</div>
+				</nav>
+
+				<nav>
+					<div class="top_right_header">
+						<div>
+							<a href="partners.html#partner-us">BECOME A PARTNER</a>
+						</div>
+
+						<div>
+							<a href="contact.html">
+								<button class="contact-button">CONTACT US</button>
+							</a>
+						</div>
+					</div>
+				</nav>
+			</div>
+
+
+			<div class="bottom_header_sect">
+				<nav>
+					<a href="index.html">HOME</a>
+					<a href="services.html">SERVICES</a>
+					<a href="projects.html">PROJECTS</a>
+					<a href="partners.html">PARTNERS</a>
+					<a href="about.html">ABOUT US</a>
+				</nav>
+			</div>
+		</header>
+
+		<main>
+			<section class="pict">
+				<div class="pictorial_container">
+					<img class="pictorial" src="images/trainer.jpg">
+				</div>
+
+				<div class="pictorial-text">
+					<div class="pict-text-title">Rethinking Youth Football in Kenya</div>
+					<div class="pict-text-sentence">Join us in our quest to raise the football standards in the country</div>
+					<a href="partners.html#partner-us"><button class="partner-button">Collaborate with Us </button></a>
+				</div>
+			</section>
+
+			<section class="proj-section">
+				<div class="project-particular">
+					<div class="proj-image">
+						<img src="images/pitch.jpg">
+					</div>
+					<div class="proj-details">
+						<div class="project-title">Inua Mkufunzi, Inua Mchezaji</div>
+						<p class="project-summary">
+							Football development is not just about players. The people who teach, lead and inspire them are pivotal figures in the process.
+							At Chipua, we believe that transforming youth football starts with empowering the people who shape it, the coaches. That’s the heart of our "Inua Mkufunzi, Inua Mchezaji" initiative. <br>
+							<a href="inua.html">Read More</a>
+						</p>
+						
+				</div>
+			</section>
+
+		</main>
+
+		<footer>
+			<div>
+				<img class="logo" src="images/tentative_logo.png">
+			</div>
+
+			<div class="footer-subsect">
+				<div class="footer-subsect-title">SERVICES</div>
+				<a class="itm" href="services.html#cap-building">
+					<div>Capacity Building</div>
+				</a>
+
+				<a href="services.html#representation">
+					<div>Representation</div>
+				</a>
+
+				<a href="services.html#datan">
+					<div>Data Analytics</div>
+				</a>
+
+			</div>
+
+			<div class="footer-subsect">
+				<div class="footer-subsect-title">PROJECTS</div>
+				<a href="inua.html">
+					<div>Inua Mkufunzi, Inua Mchezaji</div>
+				</a>
+			</div>
+
+			<div class="footer-subsect">
+				<div class="footer-subsect-title">ORGANISATION</div>
+				<a href="about.html"><div>About Us</div></a>
+				<a href="projects.html"><div>Our Projects</div></a>
+				<a href="partners.html"><div>Partnerships</div></a>
+				<a href="contact.html"><button>Contact Us</button></a>
+			</div>
+
+		</footer>
+	</body>
+
+</html>
+
+<script>
+function toggleProject(button) {
+  const fullContent = button.previousElementSibling;
+  
+  if (fullContent.style.display === "none") {
+    fullContent.style.display = "block";
+    button.textContent = "Read Less";
+  } else {
+    fullContent.style.display = "none";
+    button.textContent = "Read More";
+  }
+}
+</script>

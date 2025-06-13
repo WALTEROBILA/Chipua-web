@@ -1,0 +1,37 @@
+main{
+	margin-top: 200px;
+	padding-left: 100px;
+	padding-right: 100px;
+	padding-bottom: 30px;
+	line-height: 25px;
+}
+
+.project-title{
+	display: flex;
+	justify-content: center;
+	font-weight: bold;
+	font-size: 32px;
+	font-family: 'Helvetica';
+}
+
+.project-content{
+	font-family: 'Open Sans';
+}
+
+.subheader{
+	display: flex;
+	justify-content: center;
+	font-weight: bold;
+	font-size: 22px;
+	margin-bottom: 8px;
+	font-family: 'Helvetica';
+}
+
+.desc{
+	margin-bottom: 20px;
+}
+
+ol{
+	margin-top: 4px;
+	margin-bottom: 4px;
+}

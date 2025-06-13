@@ -1,0 +1,133 @@
+header{
+	background-color: rgba(0, 128, 0, 0.8);
+	display: flex;
+	flex-direction: column;
+	padding-bottom: 14px;
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	z-index: 10;
+	font-weight: 600;
+	color: white;
+}
+
+.top_header_sect{
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	padding-left: 12px;
+	padding-right: 12px;
+	padding-top: 12px;
+	padding-bottom: 12px;
+	border-bottom: solid;
+	border-bottom-color: white;
+	border-bottom-width: 1px;
+}
+
+.top_left_header{
+	display: flex;
+	align-items: center;
+	padding-left: 50px;
+}
+
+.logo{
+	width: 100px;
+	border-radius: 50%;
+}
+
+.top_right_header{
+	display: flex;
+	flex-direction: row;
+	margin-right: 80px;
+	align-items: center;
+}
+
+.top_right_header>div{
+	margin-left: 14px;
+	transition: 0.2s;
+}
+
+.top_right_header>div:hover{
+	cursor: pointer;
+}
+
+.top_right_header>div>a{
+	text-decoration: none;
+	color: white;
+	transition: 0.2s;
+}
+
+.top_right_header>div>a:hover{
+	color: rgb(158, 157, 157);
+}
+
+.search_container{
+	display: flex;
+	align-items: center;
+	position: relative;
+}
+
+.search_icon{
+	height: 22px;
+	margin-left: 4px;
+}
+
+.searchbar{
+	position: absolute;
+	top: 0;
+	left: -90px;
+	
+}
+
+.contact-button{
+	padding: 6px 10px 6px 10px;
+	border-radius: 20px;
+	border: none;
+	transition: 2s;
+}
+
+.contact-button:hover{
+	cursor: pointer;
+  box-shadow: 0 0 10px rgba(0, 123, 255, 0.8), 
+              0 0 20px rgba(0, 123, 255, 0.6), 
+              0 0 30px rgba(0, 123, 255, 0.4);
+  transform: scale(1.05);
+}
+
+.bottom_header_sect{
+	margin-left: 160px;
+	margin-right: 160px;
+}
+
+nav{
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+}
+
+nav>div{
+	padding-top: 12px;
+	transition: 0.1s;
+	color: white;
+}
+
+nav>a{
+	padding-top: 12px;
+	transition: 0.1s;
+	color: white;
+	text-decoration: none;
+}
+
+nav>a:hover{
+	border-top: solid;
+	border-top-color: white;
+	border-top-width: 3px;
+	cursor: pointer;
+	text-decoration: none;
+}
+
+.bottom_header_sect>a{
+	color: white;
+}
+
