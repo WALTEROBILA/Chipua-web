@@ -8,22 +8,27 @@ footer{
 	padding-right: 100px;
 	padding-top: 50px;
   padding-bottom: 80px;
+  
+  
 }
 
 .footer-subsect-title{
 	font-size: 12px;
 	font-weight: 800;
 	font-family: 'Helvetica';
+	padding-bottom: 20px;
 }
 
 .footer-subsect{
 	font-size: 18px;
 	font-family: 'Open Sans';
 	margin-bottom: 12px;
+	max-height: 100px;
 }
 
 .footer-subsect>a{
 	text-decoration: none;
+	margin-bottom: 20px;
 }
 
 .footer-subsect>a>div{
