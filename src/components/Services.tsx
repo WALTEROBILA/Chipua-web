@@ -1,5 +1,5 @@
 import Link from 'next/link'
-import { Brain, ClipboardPenLine, ChartScatter } from 'lucide-react'
+import { Brain, Clipboard as ClipboardPenLine, ScatterChart as ChartScatter } from 'lucide-react'
 import AnimatedSection from './AnimatedSection'
 
 export default function Services() {

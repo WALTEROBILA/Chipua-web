@@ -1,7 +1,7 @@
 import Header from '@/components/Header'
 import Footer from '@/components/Footer'
 import AnimatedSection from '@/components/AnimatedSection'
-import { Brain, ClipboardPenLine, ChartScatter } from 'lucide-react'
+import { Brain, Clipboard as ClipboardPenLine, ScatterChart as ChartScatter } from 'lucide-react'
 import Image from 'next/image'
 
 export default function Services() {
