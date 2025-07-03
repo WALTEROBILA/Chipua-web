@@ -5,11 +5,13 @@ import Link from 'next/link'
 import Image from 'next/image'
 import { Menu, X, Sun, Moon } from 'lucide-react'
 import { useTheme } from './ThemeProvider'
+import { usePathname } from 'next/navigation'
 
 export default function Header() {
   const [isMenuOpen, setIsMenuOpen] = useState(false)
   const [isScrolled, setIsScrolled] = useState(false)
   const { theme, toggleTheme } = useTheme()
+  const pathname = usePathname()
 
   useEffect(() => {
     const handleScroll = () => {
@@ -26,6 +28,13 @@ export default function Header() {
     { href: '/projects', label: 'PROJECTS' },
     { href: '/partners', label: 'PARTNERS' },
   ]
+
+    const isActivePage = (href: string) => {
+    if (href === '/') {
+      return pathname === '/'
+    }
+    return pathname.startsWith(href)
+  }
 
   return (
     <header className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
@@ -49,7 +58,7 @@ export default function Header() {
                 <img
                   src="https://res.cloudinary.com/dgs7wqzhg/image/upload/v1751526571/logov4_vmyyfs.png"
                   alt="Chipua Logo"
-                  className="w-35 h-20"
+                  className="w-23 h-20"
                 />
               </div>
             </Link>
@@ -106,19 +115,26 @@ export default function Header() {
       <div className="hidden md:block">
         <div className="container-max section-padding">
           <nav className="flex items-center justify-center space-x-8 py-4">
-            {navLinks.map((link) => (
+            {navLinks.map((link) => {
+              const isActive = isActivePage(link.href)
+              return (
               <Link
                 key={link.href}
                 href={link.href}
                 className={`font-medium transition-all duration-300 border-b-2 border-transparent hover:border-current pb-1 ${
-                  isScrolled 
+                  isActive
+                    ? isScrolled
+                        ? 'text-primary-600 dark:text-primary-400 border-primary-600 dark:border-primary-400'
+                        : 'text-white border-white'
+                    : isScrolled 
                     ? 'text-secondary-700 dark:text-secondary-300 hover:text-primary-600 dark:hover:text-primary-400' 
                     : 'text-white hover:border-white'
                 }`}
               >
                 {link.label}
               </Link>
-            ))}
+            )
+          })}
           </nav>
         </div>
       </div>
@@ -128,16 +144,24 @@ export default function Header() {
         <div className="md:hidden bg-white dark:bg-secondary-900 border-t border-secondary-200 dark:border-secondary-700">
           <div className="section-padding py-4">
             <nav className="space-y-4">
-              {navLinks.map((link) => (
-                <Link
-                  key={link.href}
-                  href={link.href}
-                  onClick={() => setIsMenuOpen(false)}
-                  className="block py-2 text-secondary-700 dark:text-secondary-300 font-medium hover:text-primary-600 dark:hover:text-primary-400 transition-colors"
-                >
-                  {link.label}
-                </Link>
-              ))}
+              {navLinks.map((link) => {
+                const isActive = isActivePage(link.href)
+                return (
+
+                  <Link
+                    key={link.href}
+                    href={link.href}
+                    onClick={() => setIsMenuOpen(false)}
+                    className={`block py-2 font-medium transition-colors relative ${
+                      isActive
+                        ? 'text-primary-600 dark:text-primary-400 before:absolute before:left-0 before:top-0 before:bottom-0 before:w-1 before:bg-primary-600 dark:before:bg-primary-400 before:rounded-r-full'
+                        : 'text-secondary-700 dark:text-secondary-300 hover:text-primary-600 dark:hover:text-primary-400'
+                    }`}
+                  >
+                    {link.label}
+                  </Link>
+                )
+              })}
               <div className="pt-4 border-t border-secondary-200 dark:border-secondary-700 space-y-4">
                 <Link
                   href="/partners#partner-us"

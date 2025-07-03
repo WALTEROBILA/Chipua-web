@@ -786,6 +786,9 @@ h1, h2, h3, h4, h5, h6{
 .w-full{
   width: 100%;
 }
+.w-24{
+  width: 6rem;
+}
 .max-w-2xl{
   max-width: 42rem;
 }
@@ -907,6 +910,9 @@ h1, h2, h3, h4, h5, h6{
 .rounded-lg{
   border-radius: 0.5rem;
 }
+.rounded{
+  border-radius: 0.25rem;
+}
 .border{
   border-width: 1px;
 }
@@ -918,6 +924,10 @@ h1, h2, h3, h4, h5, h6{
 }
 .border-t{
   border-top-width: 1px;
+}
+.border-primary-600{
+  --tw-border-opacity: 1;
+  border-color: rgb(22 163 74 / var(--tw-border-opacity, 1));
 }
 .border-secondary-200{
   --tw-border-opacity: 1;
@@ -1026,9 +1036,6 @@ h1, h2, h3, h4, h5, h6{
 }
 .p-8{
   padding: 2rem;
-}
-.p-1{
-  padding: 0.25rem;
 }
 .px-3{
   padding-left: 0.75rem;
@@ -1253,6 +1260,12 @@ ul{
   line-height: 1.625;
 }
 
+ol{
+  font-size: 1.125rem;
+  line-height: 1.75rem;
+  line-height: 1.625;
+}
+
 /* Custom scrollbar */
 ::-webkit-scrollbar {
   width: 8px;
@@ -1275,6 +1288,43 @@ ul{
 }
 
 ::-webkit-scrollbar-thumb:hover{
+  --tw-bg-opacity: 1;
+  background-color: rgb(22 163 74 / var(--tw-bg-opacity, 1));
+}
+
+.before\:absolute::before{
+  content: var(--tw-content);
+  position: absolute;
+}
+
+.before\:bottom-0::before{
+  content: var(--tw-content);
+  bottom: 0px;
+}
+
+.before\:left-0::before{
+  content: var(--tw-content);
+  left: 0px;
+}
+
+.before\:top-0::before{
+  content: var(--tw-content);
+  top: 0px;
+}
+
+.before\:w-1::before{
+  content: var(--tw-content);
+  width: 0.25rem;
+}
+
+.before\:rounded-r-full::before{
+  content: var(--tw-content);
+  border-top-right-radius: 9999px;
+  border-bottom-right-radius: 9999px;
+}
+
+.before\:bg-primary-600::before{
+  content: var(--tw-content);
   --tw-bg-opacity: 1;
   background-color: rgb(22 163 74 / var(--tw-bg-opacity, 1));
 }
@@ -1372,6 +1422,11 @@ ul{
   color: rgb(22 163 74 / var(--tw-text-opacity, 1));
 }
 
+.dark\:border-primary-400:is(.dark *){
+  --tw-border-opacity: 1;
+  border-color: rgb(74 222 128 / var(--tw-border-opacity, 1));
+}
+
 .dark\:border-secondary-600:is(.dark *){
   --tw-border-opacity: 1;
   border-color: rgb(71 85 105 / var(--tw-border-opacity, 1));
@@ -1457,6 +1512,12 @@ ul{
 .dark\:text-white:is(.dark *){
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity, 1));
+}
+
+.dark\:before\:bg-primary-400:is(.dark *)::before{
+  content: var(--tw-content);
+  --tw-bg-opacity: 1;
+  background-color: rgb(74 222 128 / var(--tw-bg-opacity, 1));
 }
 
 .dark\:hover\:bg-secondary-800:hover:is(.dark *){

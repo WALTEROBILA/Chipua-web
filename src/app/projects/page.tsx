@@ -12,7 +12,7 @@ export default function Projects() {
       {/* Hero Section */}
       <div className="relative h-[90vh] min-h-[500px] overflow-hidden">
         <Image
-          src="https://images.unsplash.com/photo-1551698618-1dfe5d97d256?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80"
+          src="https://res.cloudinary.com/dgs7wqzhg/image/upload/v1751530894/pitch_yy49bd.jpg"
           alt="Football coach training young players"
           fill
           className="object-cover"

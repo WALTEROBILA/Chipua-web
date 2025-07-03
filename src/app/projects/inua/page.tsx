@@ -102,7 +102,7 @@ export default function InuaProject() {
                       {section.list && (
                         <ol className="list-decimal list-inside space-y-2 ml-4">
                           {section.list.map((item, itemIndex) => (
-                            <li key={itemIndex} className="text-secondary-600 dark:text-secondary-300">
+                            <li key={itemIndex} className="text-secondary-600 dark:text-secondary-300 ">
                               {item}
                             </li>
                           ))}

@@ -27,10 +27,10 @@ export default function ContactForm() {
 
     try {
       await emailjs.sendForm(
-        'service_bgadc1b',
-        'template_b6kdtji',
+        'service_jm1ykts',
+        'template_l6pa8ki',
         e.target as HTMLFormElement,
-        'kYJ0wbr5G7mDXdHfJ'
+        'dHfV3W2c7p96Emj7G'
       )
       
       setStatus('✅ Your message was sent successfully!')
@@ -55,7 +55,7 @@ export default function ContactForm() {
   return (
     <form onSubmit={handleSubmit} className="space-y-6">
       <div>
-        <label htmlFor="user_name" className="block text-sm font-medium text-secondary-700 dark:text-secondary-300 mb-2">
+        <label htmlFor="user_name" className="block text-lg font-medium text-secondary-700 dark:text-secondary-300 mb-2">
           Full Name*
         </label>
         <input
@@ -70,7 +70,7 @@ export default function ContactForm() {
       </div>
 
       <div>
-        <label htmlFor="user_email" className="block text-sm font-medium text-secondary-700 dark:text-secondary-300 mb-2">
+        <label htmlFor="user_email" className="block text-lg font-medium text-secondary-700 dark:text-secondary-300 mb-2">
           Email Address*
         </label>
         <input
@@ -85,7 +85,7 @@ export default function ContactForm() {
       </div>
 
       <div>
-        <label htmlFor="user_phone" className="block text-sm font-medium text-secondary-700 dark:text-secondary-300 mb-2">
+        <label htmlFor="user_phone" className="block text-lg font-medium text-secondary-700 dark:text-secondary-300 mb-2">
           Phone Number
         </label>
         <input
@@ -99,7 +99,7 @@ export default function ContactForm() {
       </div>
 
       <div>
-        <label htmlFor="message" className="block text-sm font-medium text-secondary-700 dark:text-secondary-300 mb-2">
+        <label htmlFor="message" className="block text-lg font-medium text-secondary-700 dark:text-secondary-300 mb-2">
           Your Message*
         </label>
         <textarea

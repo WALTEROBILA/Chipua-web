@@ -12,7 +12,7 @@ export default function Partners() {
       {/* Hero Section */}
       <div className="relative h-[90vh] min-h-[500px] overflow-hidden">
         <Image
-          src="https://res.cloudinary.com/dgs7wqzhg/image/upload/v1751530885/agreement_mzv6x1.jpg"
+          src="https://res.cloudinary.com/dgs7wqzhg/image/upload/v1751530882/partner_mc96tj.jpg"
           alt="Partnership and collaboration"
           fill
           className="object-cover"

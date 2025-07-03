@@ -87,6 +87,10 @@ ul {
   @apply text-xl leading-relaxed;
 }
 
+ol {
+  @apply text-lg leading-relaxed;
+}
+
 /* Custom scrollbar */
 ::-webkit-scrollbar {
   width: 8px;
