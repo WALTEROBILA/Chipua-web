@@ -8,7 +8,7 @@ export default function Contact() {
     <main className="min-h-screen">
       <Header />
       
-      <div className="pt-32 pb-16 bg-gradient-to-br from-secondary-50 to-primary-50 dark:from-secondary-900 dark:to-secondary-800">
+      <div className="pt-48 pb-16 bg-gradient-to-br from-secondary-50 to-primary-50 dark:from-secondary-900 dark:to-secondary-800">
         <div className="container-max section-padding">
           
           <div className="grid lg:grid-cols-2 gap-12 max-w-6xl mx-auto">
@@ -40,7 +40,7 @@ export default function Contact() {
                     </div>
                     <div>
                       <h3 className="font-semibold text-secondary-800 dark:text-secondary-200 mb-1">Email</h3>
-                      <p className="text-secondary-600 dark:text-secondary-300">aderobila@gmail.com</p>
+                      <p className="text-secondary-600 dark:text-secondary-300">chipuafrica@gmail.com</p>
                     </div>
                   </div>
                   

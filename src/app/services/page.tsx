@@ -54,7 +54,7 @@ export default function Services() {
       <Header />
       
       {/* Hero Section */}
-      <div className="relative h-[60vh] min-h-[500px] overflow-hidden">
+      <div className="relative h-[90vh] min-h-[500px] overflow-hidden">
         <Image
           src="https://images.unsplash.com/photo-1574629810360-7efbbe195018?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1993&q=80"
           alt="Football training session"
@@ -95,7 +95,7 @@ export default function Services() {
                       </h2>
                     </div>
                     
-                    <p className="text-lg text-secondary-600 dark:text-secondary-300 mb-8 leading-relaxed">
+                    <p className="text-xl text-secondary-600 dark:text-secondary-300 mb-8 leading-relaxed">
                       {service.description}
                     </p>
 

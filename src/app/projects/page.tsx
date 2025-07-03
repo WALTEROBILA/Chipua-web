@@ -10,7 +10,7 @@ export default function Projects() {
       <Header />
       
       {/* Hero Section */}
-      <div className="relative h-[60vh] min-h-[500px] overflow-hidden">
+      <div className="relative h-[90vh] min-h-[500px] overflow-hidden">
         <Image
           src="https://images.unsplash.com/photo-1551698618-1dfe5d97d256?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80"
           alt="Football coach training young players"
@@ -54,13 +54,13 @@ export default function Projects() {
                   <h2 className="text-3xl md:text-4xl font-bold text-gradient mb-6">
                     Inua Mkufunzi, Inua Mchezaji
                   </h2>
-                  <p className="text-lg text-secondary-600 dark:text-secondary-300 leading-relaxed mb-8">
+                  <p className="text-xl text-secondary-600 dark:text-secondary-300 leading-relaxed mb-8">
                     Football development is not just about players. The people who teach, lead and inspire them are pivotal figures in the process.
                     At Chipua, we believe that transforming youth football starts with empowering the people who shape it, the coaches. That's the heart of our "Inua Mkufunzi, Inua Mchezaji" initiative.
                   </p>
                   <Link 
                     href="/projects/inua" 
-                    className="inline-flex items-center text-primary-600 dark:text-primary-400 font-semibold hover:text-primary-700 dark:hover:text-primary-300 transition-colors group"
+                    className="inline-flex items-center text-primary-600 dark:text-primary-400 text = xlfont-semibold hover:text-primary-700 dark:hover:text-primary-300 transition-colors group"
                   >
                     Read More
                     <svg className="w-5 h-5 ml-2 transform group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">

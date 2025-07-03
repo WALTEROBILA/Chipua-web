@@ -10,14 +10,27 @@ export default function Partners() {
       <Header />
       
       {/* Hero Section */}
-      <div className="relative h-[60vh] min-h-[500px] overflow-hidden">
+      <div className="relative h-[90vh] min-h-[500px] overflow-hidden">
         <Image
-          src="https://images.unsplash.com/photo-1552674605-db6ffd4facb5?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80"
+          src="https://res.cloudinary.com/dgs7wqzhg/image/upload/v1751530885/agreement_mzv6x1.jpg"
           alt="Partnership and collaboration"
           fill
           className="object-cover"
           priority
         />
+        <div className="absolute inset-0 bg-gradient-to-r from-primary-900/80 to-primary-700/60" />
+        <div className="absolute inset-0 flex items-center justify-center">
+          <div className="text-center z-10 text-white section-padding">
+            <AnimatedSection>
+              <h1 className="text-4xl md:text-6xl font-bold mb-6">
+                Become a partner
+              </h1>
+              <Link href="/contact" className="btn-outline">
+                Contact Us
+              </Link>
+            </AnimatedSection>
+          </div>
+        </div>
         <div className="absolute inset-0 bg-gradient-to-r from-primary-900/80 to-primary-700/60" />
       </div>
 
@@ -45,12 +58,12 @@ export default function Partners() {
                     institution, academic body, or local initiative, there is a role for you in this journey.
                   </p>
 
-                  <div className="bg-primary-50 dark:bg-primary-900/30 p-6 rounded-2xl mb-8">
+                  <div className="bg-primary-50 dark:bg-primary-900/30 p-6 rounded-2xl text-lg mb-8">
                     <h2 className="text-2xl font-bold text-primary-600 dark:text-primary-400 mb-4">
                       Partnering with Chipua means:
                     </h2>
                     
-                    <div className="space-y-4">
+                    <div className="space-y-4 ">
                       <div className="flex items-start">
                         <div className="w-2 h-2 bg-primary-500 rounded-full mt-3 mr-4 flex-shrink-0" />
                         <div>

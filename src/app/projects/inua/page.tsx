@@ -67,7 +67,7 @@ export default function InuaProject() {
     <main className="min-h-screen">
       <Header />
       
-      <div className="pt-32 pb-16 bg-gradient-to-br from-secondary-50 to-primary-50 dark:from-secondary-900 dark:to-secondary-800">
+      <div className="pt-48 pb-16 bg-gradient-to-br from-secondary-50 to-primary-50 dark:from-secondary-900 dark:to-secondary-800">
         <div className="container-max section-padding">
           <div className="max-w-4xl mx-auto">
             

@@ -35,23 +35,22 @@ export default function Footer() {
           
           {/* Logo */}
           <div className="lg:col-span-1">
-            <div className="relative w-20 h-20 rounded-full overflow-hidden bg-white p-1 mb-6">
-              <Image
-                src="https://images.unsplash.com/photo-1614632537190-23e4b2e69c88?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80"
-                alt="Chipua Logo"
-                fill
-                className="object-cover rounded-full"
-              />
-            </div>
+            <div className="  overflow-hidden ">
+                <img
+                  src="https://res.cloudinary.com/dgs7wqzhg/image/upload/v1751526571/logov4_vmyyfs.png"
+                  alt="Chipua Logo"
+                  className="w-35 h-20"
+                />
+              </div>
           </div>
 
           {/* Footer Sections */}
           {footerSections.map((section) => (
             <div key={section.title}>
-              <h3 className="text-sm font-bold text-secondary-300 mb-4 tracking-wider">
+              <h3 className="text-xl font-bold text-secondary-300 mb-4 tracking-wider">
                 {section.title}
               </h3>
-              <div className="space-y-3">
+              <div className="space-y-3 text-xl">
                 {section.links.map((link) => (
                   <Link
                     key={link.href}
@@ -67,7 +66,7 @@ export default function Footer() {
 
           {/* Contact Button */}
           <div>
-            <h3 className="text-sm font-bold text-secondary-300 mb-4 tracking-wider">
+            <h3 className="text-xl font-bold text-secondary-300 mb-4 tracking-wider">
               CONTACT
             </h3>
             <Link

@@ -45,12 +45,11 @@ export default function Header() {
             
             {/* Logo */}
             <Link href="/" className="flex items-center">
-              <div className="relative w-16 h-16 rounded-full overflow-hidden bg-white p-1">
-                <Image
-                  src="https://images.unsplash.com/photo-1614632537190-23e4b2e69c88?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80"
+              <div className=" rounded-full overflow-hidden bg-white ">
+                <img
+                  src="https://res.cloudinary.com/dgs7wqzhg/image/upload/v1751526571/logov4_vmyyfs.png"
                   alt="Chipua Logo"
-                  fill
-                  className="object-cover rounded-full"
+                  className="w-35 h-20"
                 />
               </div>
             </Link>
