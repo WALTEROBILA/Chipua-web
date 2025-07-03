@@ -10,8 +10,13 @@ import { usePathname } from 'next/navigation'
 export default function Header() {
   const [isMenuOpen, setIsMenuOpen] = useState(false)
   const [isScrolled, setIsScrolled] = useState(false)
+  const [mounted, setMounted] = useState(false)
   const { theme, toggleTheme } = useTheme()
   const pathname = usePathname()
+
+  useEffect(() => {
+    setMounted(true)
+  }, [])
 
   useEffect(() => {
     const handleScroll = () => {
@@ -76,6 +81,7 @@ export default function Header() {
                 BECOME A PARTNER
               </Link>
               
+            {mounted && (
               <button
                 onClick={toggleTheme}
                 className={`p-2 rounded-lg transition-colors duration-300 ${
@@ -86,7 +92,7 @@ export default function Header() {
               >
                 {theme === 'light' ? <Moon className="w-5 h-5" /> : <Sun className="w-5 h-5" />}
               </button>
-              
+            )}
               <Link href="/contact" className={
                 isScrolled 
                   ? 'btn-primary' 
@@ -178,12 +184,15 @@ export default function Header() {
                   >
                     CONTACT US
                   </Link>
+
+                {mounted && (
                   <button
                     onClick={toggleTheme}
                     className="p-2 rounded-lg text-secondary-700 dark:text-secondary-300 hover:bg-secondary-100 dark:hover:bg-secondary-800 transition-colors"
                   >
                     {theme === 'light' ? <Moon className="w-5 h-5" /> : <Sun className="w-5 h-5" />}
                   </button>
+                )}
                 </div>
               </div>
             </nav>
