@@ -63,7 +63,7 @@ export default function Header() {
                 <img
                   src="https://res.cloudinary.com/dgs7wqzhg/image/upload/v1751526571/logov4_vmyyfs.png"
                   alt="Chipua Logo"
-                  className="w-23 h-20"
+                  className="w-20 h-20"
                 />
               </div>
             </Link>
